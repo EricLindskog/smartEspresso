@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".recipe.RecipeListActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
 
 
         <activity android:name=".MainActivity">

@@ -19,5 +19,7 @@
     <string name="dose_head">Dose</string>
     <string name="yield_head">Yield</string>
     <string name="brewTime_head">Brew time</string>
-    <string name="select_head"></string>
+    <string name="select_head"> </string>
+    <string name="view_recipies">View recipies</string>
+    <string name="recipe_controls">Recipe controls</string>
 </resources>

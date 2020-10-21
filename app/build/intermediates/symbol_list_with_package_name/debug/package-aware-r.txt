@@ -698,6 +698,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black_overlay
+color brewControlBackground
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -781,6 +782,8 @@ color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color powerControlBackground
+color powerControlStatusBackground
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -789,8 +792,10 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
-color recipeBackgroundColor
-color recipeBorderColor
+color recipeBackground
+color recipeBorder
+color recipeControlSelectedBackground
+color recipeControlSelectedBorder
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -1023,6 +1028,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen recipe_controls_row_margin
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1203,6 +1209,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable open_on_phone
+drawable recipe_control_border
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable ws_action_item_background
@@ -1283,6 +1290,10 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id activeBrewTime
+id activeCoffee
+id activeDose
+id activeYield
 id activity_chooser_view_content
 id add
 id alertTitle
@@ -1405,6 +1416,7 @@ id progress_horizontal
 id radio
 id recipeList
 id recipeListTitle
+id recipes
 id right
 id right_icon
 id right_side
@@ -1700,11 +1712,13 @@ string path_password_strike_through
 string power_controls
 string power_off
 string power_on
+string recipe_controls
 string recipe_title
 string search_menu_title
 string select_head
 string select_recipe
 string status_bar_notification_info_overflow
+string view_recipies
 string ws_action_drawer_content_description
 string ws_navigation_drawer_content_description
 string yield_head

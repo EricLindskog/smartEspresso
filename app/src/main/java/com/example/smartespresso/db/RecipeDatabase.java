@@ -34,17 +34,6 @@ public class RecipeDatabase {
             Log.e("DB","Could not add recipe with coffee: "+coffee);
         }
     }
-    public float getBrewTime(String coffee){
-        float ret = 0f;
-        String[]cols = new String[1];
-        cols[0]= "brewTime";
-        Cursor res = db.query("recipe",cols,"coffee = '"+coffee+"'",null,null,null,null);
-        res.moveToFirst();
-        int i = res.getColumnIndexOrThrow("brewTime");
-        Log.i("DB","ncols"+res.getColumnCount()+" col-i: "+i);
-        ret = res.getFloat(i);
-        return ret;
-    }
     public String[] getRecipesString(){
         ArrayList<String> ret = new ArrayList<String>();
 

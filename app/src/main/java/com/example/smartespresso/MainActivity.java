@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Layout;
 import android.util.Log;
 import android.view.View;
 import android.widget.NumberPicker;
@@ -113,10 +115,9 @@ public class MainActivity extends AppCompatActivity {
         timer.schedule(doAsynchronousTask, 0, 2000);
     }
 
-    public void dbTest(View view){
+    public void viewRecipies(View view){
 
         Intent myIntent = new Intent(this, RecipeListActivity.class);
-        //myIntent.putExtra("key", value); //Optional parameters
         startActivityForResult(myIntent,RECIPE_ACTIVITY_REQUEST_CODE);
     }
     @Override
@@ -137,5 +138,15 @@ public class MainActivity extends AppCompatActivity {
         NumberPicker np = (NumberPicker) findViewById(R.id.brewTime);
         Log.d("recipe","setting brew time to: "+ Float.parseFloat(recipeArr[3]));
         np.setValue((int)Float.parseFloat(recipeArr[3]));
+        TextView coffee = findViewById(R.id.activeCoffee);
+        TextView dose = findViewById(R.id.activeDose);
+        TextView yield = findViewById(R.id.activeYield);
+        TextView brewTime = findViewById(R.id.activeBrewTime);
+        coffee.setText(recipeArr[0]);
+        dose.setText(recipeArr[1]);
+        yield.setText(recipeArr[2]);
+        brewTime.setText(recipeArr[3]);
     }
+
+
 }

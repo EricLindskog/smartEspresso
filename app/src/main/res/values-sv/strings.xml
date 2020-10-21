@@ -7,4 +7,19 @@
     <string name="brew_button">Brygg</string>
     <string name="recipe_title">Recept</string>
     <string name="select_recipe">Välj</string>
+    <string name="enter_coffee">Kaffe</string>
+    <string name="edit_coffee">Kaffets namn</string>
+    <string name="enter_dose">Dos</string>
+    <string name="edit_dose">dos i gram</string>
+    <string name="enter_yield">Mängd ut</string>
+    <string name="edit_yield">mängd ut i gram</string>
+    <string name="enter_brewTime">Bryggtid</string>
+    <string name="edit_brewTime">bryggtid i sekunder</string>
+    <string name="coffee_head">Kaffe</string>
+    <string name="dose_head">Dos</string>
+    <string name="yield_head">Mängd ut</string>
+    <string name="brewTime_head">Bryggtid</string>
+    <string name="select_head"> </string>
+    <string name="view_recipies">Se recept</string>
+    <string name="recipe_controls">Receptkontoll</string>
 </resources>

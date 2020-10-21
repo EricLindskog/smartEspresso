@@ -100,7 +100,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\om
 	android:theme
 		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:17:9-40
 activity#com.example.smartespresso.recipe.RecipeListActivity
-ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:18:9-20:68
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:18:9-20:59
 	android:theme
 		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:20:13-56
 	android:name
