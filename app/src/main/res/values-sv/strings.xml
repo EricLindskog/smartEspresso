@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SmartEspresso</string>
+    <string name="power_controls">Strömkontroll</string>
+    <string name="power_on">Sätt på</string>
+    <string name="power_off">Stäng av</string>
+    <string name="brew_controls">Bryggkontroll</string>
+    <string name="brew_button">Brygg</string>
+    <string name="recipe_title">Recept</string>
+    <string name="select_recipe">Välj</string>
+</resources>

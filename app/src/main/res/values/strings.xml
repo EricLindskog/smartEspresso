@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SmartEspresso</string>
+    <string name="power_controls">Power controls</string>
+    <string name="power_on">Turn on</string>
+    <string name="power_off">Turn off</string>
+    <string name="brew_controls">Brew controls</string>
+    <string name="brew_button">Brew</string>
+    <string name="recipe_title">Recipes</string>
+    <string name="select_recipe">Select</string>
+    <string name="enter_coffee">Coffee</string>
+    <string name="edit_coffee">Name of coffee</string>
+    <string name="enter_dose">Dose</string>
+    <string name="edit_dose">dose in grams</string>
+    <string name="enter_yield">Yield</string>
+    <string name="edit_yield">yield in grams</string>
+    <string name="enter_brewTime">Brew time</string>
+    <string name="edit_brewTime">Brew time in seconds</string>
+</resources>
