@@ -1,27 +1,24 @@
-package com.example.smartespresso;
+package com.example.smartespresso.recipe;
 
-import androidx.appcompat.widget.PopupMenu;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
+import com.example.smartespresso.R;
 import com.example.smartespresso.db.RecipeDatabase;
+import com.example.smartespresso.recipe.RecipeFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuInflater;
 import android.view.View;
-import android.view.ViewParent;
-import android.widget.Button;
 import android.widget.EditText;
 
 public class RecipeListActivity extends AppCompatActivity {
@@ -32,7 +29,7 @@ public class RecipeListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recipe_list);
         SQLiteDatabase db = openOrCreateDatabase("recipes.db", MODE_PRIVATE, null);
         rdb = new RecipeDatabase(db);
-        fillList(rdb);
+        fillList();
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,15 +38,19 @@ public class RecipeListActivity extends AppCompatActivity {
             }
         });
     }
-    private void fillList(RecipeDatabase rdb){
-        Log.d("db","filling list");
+    private void fillList(){
 
         String[] recipes = rdb.getRecipesString();
         for(int i = 0; i< recipes.length; i++){
             addRecipeFragment(recipes[i], Integer.toString(i));
-            Log.d("db","adding recipe: "+recipes[i]);
         }
 
+    }
+    private void refreshList(){
+        for (Fragment fragment : getSupportFragmentManager().getFragments()) {
+            getSupportFragmentManager().beginTransaction().remove(fragment).commit();
+        }
+        fillList();
     }
     private void addRecipeFragment(String txt, String tag){
         FragmentManager fm = getSupportFragmentManager();
@@ -80,7 +81,11 @@ public class RecipeListActivity extends AppCompatActivity {
         EditText enterCoffee = (EditText) v.findViewById(R.id.editCoffee);
         EditText enterDose = (EditText) v.findViewById(R.id.editDose);
         EditText enterYield = (EditText) v.findViewById(R.id.editYield);
-        Log.d("dia","submitted: "+enterCoffee.getText());
-
+        EditText enterBrewTime = (EditText) v.findViewById(R.id.editBrewTime);
+        rdb.addRecipe(enterCoffee.getText().toString(),
+                Integer.parseInt(enterDose.getText().toString()),
+                Integer.parseInt(enterYield.getText().toString()),
+                Float.parseFloat(enterBrewTime.getText().toString()));
+        refreshList();
     }
 }

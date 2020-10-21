@@ -1670,10 +1670,13 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string brewTime_head
 string brew_button
 string brew_controls
 string character_counter_content_description
 string character_counter_pattern
+string coffee_head
+string dose_head
 string edit_brewTime
 string edit_coffee
 string edit_dose
@@ -1699,10 +1702,12 @@ string power_off
 string power_on
 string recipe_title
 string search_menu_title
+string select_head
 string select_recipe
 string status_bar_notification_info_overflow
 string ws_action_drawer_content_description
 string ws_navigation_drawer_content_description
+string yield_head
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

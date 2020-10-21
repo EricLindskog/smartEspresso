@@ -15,4 +15,9 @@
     <string name="edit_yield">yield in grams</string>
     <string name="enter_brewTime">Brew time</string>
     <string name="edit_brewTime">Brew time in seconds</string>
+    <string name="coffee_head">Coffee</string>
+    <string name="dose_head">Dose</string>
+    <string name="yield_head">Yield</string>
+    <string name="brewTime_head">Brew time</string>
+    <string name="select_head"></string>
 </resources>

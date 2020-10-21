@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecipeListActivity">
+    tools:context=".recipe.RecipeListActivity">
 
 
     <LinearLayout
@@ -19,7 +19,66 @@
             android:text="@string/recipe_title"
             android:textAlignment="center"
             android:textSize="36sp" />
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/coffeeHead"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".45"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/coffee_head"/>
+
+            <TextView
+                android:id="@+id/doseHead"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/dose_head" />
+
+            <TextView
+                android:id="@+id/yieldHead"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/yield_head" />
+
+            <TextView
+                android:id="@+id/brewTimeHead"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/brewTime_head" />
+
+            <TextView
+                android:id="@+id/selectHead"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/select_head" />
+        </LinearLayout>-->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">

@@ -26,7 +26,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.smartespresso.RecipeListActivity"
+            android:name="com.example.smartespresso.recipe.RecipeListActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.smartespresso.MainActivity" >
             <intent-filter>

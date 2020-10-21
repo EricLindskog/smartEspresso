@@ -43,8 +43,8 @@
 27-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:17:9-40
 28        <activity
 28-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:18:9-20:68
-29            android:name="com.example.smartespresso.RecipeListActivity"
-29-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:19:13-47
+29            android:name="com.example.smartespresso.recipe.RecipeListActivity"
+29-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:19:13-54
 30            android:theme="@style/AppTheme.NoActionBar" />
 30-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:20:13-56
 31        <activity android:name="com.example.smartespresso.MainActivity" >

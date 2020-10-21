@@ -1,7 +1,8 @@
-package com.example.smartespresso;
+package com.example.smartespresso.recipe;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,10 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.smartespresso.R;
+
+import static android.app.Activity.RESULT_OK;
 
 public class RecipeFragment extends Fragment {
     String txt;
@@ -40,18 +45,21 @@ public class RecipeFragment extends Fragment {
         select.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                TextView coffee = getView().findViewById(R.id.coffee);
+                TextView dose = getView().findViewById(R.id.dose);
+                TextView yield = getView().findViewById(R.id.yield);
+                TextView brewTime = getView().findViewById(R.id.brewTime);
+                String ret = (coffee.getText().toString() + " "
+                        + dose.getText().toString() + " "
+                        + yield.getText().toString() + " "
+                        + brewTime.getText().toString() + " ");
+                Intent intent = new Intent();
+                intent.putExtra("recipe", ret);
+                getActivity().setResult(RESULT_OK, intent);
+                getActivity().finish();
             }
         });
     }
 
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-    }
-    /*
-    public void setText(String text){
-        View v = this.getView();
-        TextView txt = (TextView) v.findViewById(R.id.recipe);
-        txt.setText(text);
-    }*/
+
 }

@@ -1,14 +1,10 @@
 package com.example.smartespresso;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.app.Fragment;
 //import androidx.fragment.app.Fragment
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -20,13 +16,14 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.example.smartespresso.api.GetApi;
 import com.example.smartespresso.api.PostApi;
-import com.example.smartespresso.db.RecipeDatabase;
+import com.example.smartespresso.recipe.RecipeListActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 
 public class MainActivity extends AppCompatActivity {
+    private static final int RECIPE_ACTIVITY_REQUEST_CODE = 0;
     RequestQueue queue;
     final Context ctx = this;
     Timer timer;
@@ -115,10 +112,30 @@ public class MainActivity extends AppCompatActivity {
         };
         timer.schedule(doAsynchronousTask, 0, 2000);
     }
+
     public void dbTest(View view){
 
         Intent myIntent = new Intent(this, RecipeListActivity.class);
         //myIntent.putExtra("key", value); //Optional parameters
-        startActivity(myIntent);
+        startActivityForResult(myIntent,RECIPE_ACTIVITY_REQUEST_CODE);
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d("activity","returned!");
+        if (requestCode == RECIPE_ACTIVITY_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                // Get String data from Intent
+                String recipe = data.getStringExtra("recipe");
+                applyRecipe(recipe);
+                //Toast.makeText(this, returnString, Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+    private void applyRecipe(String recipe){
+        String[] recipeArr = recipe.split("\\s+");
+        NumberPicker np = (NumberPicker) findViewById(R.id.brewTime);
+        Log.d("recipe","setting brew time to: "+ Float.parseFloat(recipeArr[3]));
+        np.setValue((int)Float.parseFloat(recipeArr[3]));
     }
 }
