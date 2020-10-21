@@ -1,0 +1,66 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.smartespresso"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:5:5-68
+11-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:5:22-65
+12
+13    <uses-feature android:name="android.hardware.type.watch" />
+13-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:7:5-64
+13-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:7:19-61
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:9:5-67
+15-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:9:22-64
+16
+17    <application
+17-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:11:5-30:19
+18        android:allowBackup="true"
+18-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:12:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2cfc6de18491d78868ffdd6cc499684d\core-1.1.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:13:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:14:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:15:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:16:9-35
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:17:9-40
+28        <activity
+28-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:18:9-20:68
+29            android:name="com.example.smartespresso.RecipeListActivity"
+29-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:19:13-47
+30            android:theme="@style/AppTheme.NoActionBar" />
+30-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:20:13-56
+31        <activity android:name="com.example.smartespresso.MainActivity" >
+31-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:23:9-29:20
+31-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:23:19-47
+32            <intent-filter>
+32-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:24:13-28:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:25:17-69
+33-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:25:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:27:17-77
+35-->C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:27:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

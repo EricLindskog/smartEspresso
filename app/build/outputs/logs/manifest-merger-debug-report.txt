@@ -1,0 +1,215 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:2:1-32:12
+MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\08357060a36f0a1a3cd1d832bce742aa\navigation-ui-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\3fa4c95847d0ac6a465cad219580904e\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\d31435c4afe13012f248cb173a0b4b36\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.wear:wear:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\8123a5ca8e19d27141851e9f5fb7c703\wear-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\51e491088e58d962e72782e023b4e73e\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\fd2f41f9f27d194d46f9810c97e782c4\navigation-fragment-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\c53449de26d78cc5872f99d3bc6b73c8\jetified-volley-1.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\dee56812972f65c48f33f011a0d23568\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\0e4e9b14dce0e7dee78fb692237ab917\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\a6bb093842f40747194d568295ee990f\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\96f63f4306f0fc56c140d73176dc3310\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\f082c57b244577a22e1236d38388ce52\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\bbe13d8129bba81257bd6436c2b34ccd\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2cb5fad9283dc2b381f19f555c3134d5\transition-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\e492391935922ce61c196b0901270ddd\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\e62f873cf4263d40c7b89017e7a83d01\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\ee1381a2543bbd54f1500f914aeffb54\navigation-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\78ecae9c2f22493c6a91e24a1a2d4820\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\cd02317c23e662d0fa4ab88d0d0916d7\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\10fcddba391b31bd86d702ee5aeb2035\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2833ccf74467ed201bb9e8973fbcecdb\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\a22b9bda8912dc5b60b669716d09acf1\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\a3ff52c02bd8c6ecf6b5c868009ecb0c\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\54972eed75d5a0ae7261aba7ffc821e2\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\93091c25d5713cca58ce2e2ecdac42b4\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\425df82e4b89769aedf4ee8a27a43109\navigation-common-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2cfc6de18491d78868ffdd6cc499684d\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\1e931abee3afbede18629b7ccd33d0ef\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\b1af4f2bb3cdb8a270b23f3dd207998b\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\f21ecb78568f62b9cfdf7ce8b84f47c1\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\65c3d4650b10035e3c16dbbe7955e172\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\98b1926715faee64bbfa9c00b2dc79e4\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\150913b578eabd8badf12d4daa286895\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\4e4ddc58b098620f1f74a1665263ff73\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\6e0bbf23856e3e10e3514a4e9cc95fa1\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\054204406b27658dc74d8b19f547bed5\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\6a6af4ea2fadaa66c773f3ffe79910a7\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\8a5e36edf0bf6877cab03a462d62c58d\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\abfb1986835d7863ad588927944dd5ef\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\88958e78a03a39da36d379d2c8b6a4b0\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:3:5-40
+		INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:2:1-32:12
+		INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:2:1-32:12
+		INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:5:22-65
+uses-feature#android.hardware.type.watch
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:7:5-64
+	android:name
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:7:19-61
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:9:22-64
+application
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:11:5-30:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\3fa4c95847d0ac6a465cad219580904e\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\3fa4c95847d0ac6a465cad219580904e\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\51e491088e58d962e72782e023b4e73e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\51e491088e58d962e72782e023b4e73e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\c53449de26d78cc5872f99d3bc6b73c8\jetified-volley-1.1.0\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\c53449de26d78cc5872f99d3bc6b73c8\jetified-volley-1.1.0\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2cfc6de18491d78868ffdd6cc499684d\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2cfc6de18491d78868ffdd6cc499684d\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\f21ecb78568f62b9cfdf7ce8b84f47c1\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\f21ecb78568f62b9cfdf7ce8b84f47c1\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2cfc6de18491d78868ffdd6cc499684d\core-1.1.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:14:9-41
+	android:roundIcon
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:15:9-54
+	android:icon
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:17:9-40
+activity#com.example.smartespresso.RecipeListActivity
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:18:9-20:68
+	android:theme
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:20:13-56
+	android:name
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:19:13-47
+activity#com.example.smartespresso.MainActivity
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:23:9-29:20
+	android:name
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:23:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:24:13-28:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml:27:27-74
+uses-sdk
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\08357060a36f0a1a3cd1d832bce742aa\navigation-ui-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\08357060a36f0a1a3cd1d832bce742aa\navigation-ui-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\3fa4c95847d0ac6a465cad219580904e\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\3fa4c95847d0ac6a465cad219580904e\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\d31435c4afe13012f248cb173a0b4b36\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\d31435c4afe13012f248cb173a0b4b36\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.wear:wear:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\8123a5ca8e19d27141851e9f5fb7c703\wear-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.wear:wear:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\8123a5ca8e19d27141851e9f5fb7c703\wear-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\51e491088e58d962e72782e023b4e73e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\51e491088e58d962e72782e023b4e73e\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\fd2f41f9f27d194d46f9810c97e782c4\navigation-fragment-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\fd2f41f9f27d194d46f9810c97e782c4\navigation-fragment-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\c53449de26d78cc5872f99d3bc6b73c8\jetified-volley-1.1.0\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\c53449de26d78cc5872f99d3bc6b73c8\jetified-volley-1.1.0\AndroidManifest.xml:7:5-43
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\dee56812972f65c48f33f011a0d23568\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\dee56812972f65c48f33f011a0d23568\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\0e4e9b14dce0e7dee78fb692237ab917\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\0e4e9b14dce0e7dee78fb692237ab917\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\a6bb093842f40747194d568295ee990f\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\a6bb093842f40747194d568295ee990f\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\96f63f4306f0fc56c140d73176dc3310\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\96f63f4306f0fc56c140d73176dc3310\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\f082c57b244577a22e1236d38388ce52\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\f082c57b244577a22e1236d38388ce52\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\bbe13d8129bba81257bd6436c2b34ccd\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\bbe13d8129bba81257bd6436c2b34ccd\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2cb5fad9283dc2b381f19f555c3134d5\transition-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2cb5fad9283dc2b381f19f555c3134d5\transition-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\e492391935922ce61c196b0901270ddd\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\e492391935922ce61c196b0901270ddd\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\e62f873cf4263d40c7b89017e7a83d01\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\e62f873cf4263d40c7b89017e7a83d01\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\ee1381a2543bbd54f1500f914aeffb54\navigation-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\ee1381a2543bbd54f1500f914aeffb54\navigation-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\78ecae9c2f22493c6a91e24a1a2d4820\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\78ecae9c2f22493c6a91e24a1a2d4820\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\cd02317c23e662d0fa4ab88d0d0916d7\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\cd02317c23e662d0fa4ab88d0d0916d7\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\10fcddba391b31bd86d702ee5aeb2035\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\10fcddba391b31bd86d702ee5aeb2035\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2833ccf74467ed201bb9e8973fbcecdb\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2833ccf74467ed201bb9e8973fbcecdb\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\a22b9bda8912dc5b60b669716d09acf1\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\a22b9bda8912dc5b60b669716d09acf1\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\a3ff52c02bd8c6ecf6b5c868009ecb0c\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\a3ff52c02bd8c6ecf6b5c868009ecb0c\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\54972eed75d5a0ae7261aba7ffc821e2\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\54972eed75d5a0ae7261aba7ffc821e2\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\93091c25d5713cca58ce2e2ecdac42b4\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\93091c25d5713cca58ce2e2ecdac42b4\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\425df82e4b89769aedf4ee8a27a43109\navigation-common-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\425df82e4b89769aedf4ee8a27a43109\navigation-common-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2cfc6de18491d78868ffdd6cc499684d\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\2cfc6de18491d78868ffdd6cc499684d\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\1e931abee3afbede18629b7ccd33d0ef\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\1e931abee3afbede18629b7ccd33d0ef\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\b1af4f2bb3cdb8a270b23f3dd207998b\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\b1af4f2bb3cdb8a270b23f3dd207998b\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\f21ecb78568f62b9cfdf7ce8b84f47c1\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\f21ecb78568f62b9cfdf7ce8b84f47c1\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\65c3d4650b10035e3c16dbbe7955e172\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\65c3d4650b10035e3c16dbbe7955e172\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\98b1926715faee64bbfa9c00b2dc79e4\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\98b1926715faee64bbfa9c00b2dc79e4\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\150913b578eabd8badf12d4daa286895\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\150913b578eabd8badf12d4daa286895\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\4e4ddc58b098620f1f74a1665263ff73\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\4e4ddc58b098620f1f74a1665263ff73\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\6e0bbf23856e3e10e3514a4e9cc95fa1\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\6e0bbf23856e3e10e3514a4e9cc95fa1\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\054204406b27658dc74d8b19f547bed5\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\054204406b27658dc74d8b19f547bed5\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\6a6af4ea2fadaa66c773f3ffe79910a7\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\6a6af4ea2fadaa66c773f3ffe79910a7\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\8a5e36edf0bf6877cab03a462d62c58d\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\8a5e36edf0bf6877cab03a462d62c58d\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\abfb1986835d7863ad588927944dd5ef\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\abfb1986835d7863ad588927944dd5ef\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\88958e78a03a39da36d379d2c8b6a4b0\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\omgwt\.gradle\caches\transforms-2\files-2.1\88958e78a03a39da36d379d2c8b6a4b0\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\omgwt\AndroidStudioProjects\SmartEspresso\app\src\main\AndroidManifest.xml
