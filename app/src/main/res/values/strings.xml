@@ -22,4 +22,8 @@
     <string name="select_head"> </string>
     <string name="view_recipies">View recipies</string>
     <string name="recipe_controls">Recipe controls</string>
+    <string name="power_warning">Remember to check that power is off</string>
+    <string name="power_default">off</string>
+    <string name="temp_default">-</string>
+    <string name="add_recipe_button">Add recipe</string>
 </resources>

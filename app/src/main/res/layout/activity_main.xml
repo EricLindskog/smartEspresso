@@ -28,7 +28,7 @@
                     android:layout_weight="1"
                     android:text="@string/power_controls"
                     android:textAlignment="center"
-                    android:textSize="36sp" />
+                    android:textSize="@dimen/title_text_size" />
             </TableRow>
 
             <TableRow
@@ -41,8 +41,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".50"
                     android:background="@color/powerControlStatusBackground"
+                    android:text="@string/power_default"
                     android:textAlignment="center"
-                    android:textSize="36sp" />
+                    android:textSize="@dimen/title_text_size" />
 
                 <TextView
                     android:id="@+id/temp"
@@ -50,8 +51,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".50"
                     android:background="@color/powerControlStatusBackground"
+                    android:text="@string/temp_default"
                     android:textAlignment="center"
-                    android:textSize="36sp" />
+                    android:textSize="@dimen/title_text_size" />
             </TableRow>
 
             <TableRow
@@ -95,7 +97,7 @@
                     android:layout_weight="1"
                     android:text="@string/brew_controls"
                     android:textAlignment="center"
-                    android:textSize="36sp" />
+                    android:textSize="@dimen/title_text_size" />
             </TableRow>
 
             <TableRow
@@ -151,7 +153,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/recipe_control_border"
-                        android:layout_marginBottom="@dimen/recipe_controls_row_margin">
+                        android:layout_marginBottom="@dimen/recipe_controls_row_margin"
+                        android:padding="@dimen/recipe_controls_row_padding">
 
                         <TextView
                             android:layout_width="0dp"
@@ -176,7 +179,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/recipe_control_border"
-                        android:layout_marginBottom="@dimen/recipe_controls_row_margin">
+                        android:layout_marginBottom="@dimen/recipe_controls_row_margin"
+                        android:padding="@dimen/recipe_controls_row_padding">
 
                         <TextView
                             android:layout_width="0dp"
@@ -201,7 +205,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/recipe_control_border"
-                        android:layout_marginBottom="@dimen/recipe_controls_row_margin">
+                        android:layout_marginBottom="@dimen/recipe_controls_row_margin"
+                        android:padding="@dimen/recipe_controls_row_padding">
 
                         <TextView
                             android:layout_width="0dp"
@@ -226,7 +231,8 @@
                         android:layout_marginBottom="@dimen/recipe_controls_row_margin"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/recipe_control_border">
+                        android:background="@drawable/recipe_control_border"
+                        android:padding="@dimen/recipe_controls_row_padding">
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"

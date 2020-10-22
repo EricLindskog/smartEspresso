@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#F8EAE9</color>
+    <color name="colorPrimaryDark">#BF3D30</color>
+    <color name="colorOnPrimary">#000000</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorAccent">#E74C3C</color>
     <color name="black_overlay">#66000000</color>
     <color name="recipeBorder">#000000</color>
     <color name="recipeBackground">#eb9494</color>
     <color name="recipeControlSelectedBorder">#000000</color>
-    <color name="recipeControlSelectedBackground">#81C5E3</color>
+    <color name="recipeControlSelectedBackground">#9BCADF</color>
     <color name="powerControlBackground">#E48888</color>
     <color name="powerControlStatusBackground">#eb9494</color>
     <color name="brewControlBackground">#A7E8AA</color>

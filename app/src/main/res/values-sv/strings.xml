@@ -22,4 +22,8 @@
     <string name="select_head"> </string>
     <string name="view_recipies">Se recept</string>
     <string name="recipe_controls">Receptkontoll</string>
+    <string name="power_warning">Kontrollera att maskinen är avstängd</string>
+    <string name="power_default">av</string>
+    <string name="temp_default">-</string>
+    <string name="add_recipe_button">Lägg till recept</string>
 </resources>

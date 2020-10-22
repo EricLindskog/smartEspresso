@@ -1,8 +1,14 @@
 package com.example.smartespresso;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 //import androidx.fragment.app.Fragment
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -10,6 +16,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.Layout;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.NumberPicker;
 import android.widget.TextView;
@@ -19,6 +26,8 @@ import com.android.volley.RequestQueue;
 import com.example.smartespresso.api.GetApi;
 import com.example.smartespresso.api.PostApi;
 import com.example.smartespresso.recipe.RecipeListActivity;
+import com.google.android.material.snackbar.Snackbar;
+import com.muddzdev.styleabletoast.StyleableToast;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -26,6 +35,7 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
     private static final int RECIPE_ACTIVITY_REQUEST_CODE = 0;
+    private static final int TARGET_TEMPERATURE = 93;
     RequestQueue queue;
     final Context ctx = this;
     Timer timer;
@@ -35,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //Button turnOn = (Button) findViewById(R.id.text);
         //Button turnOff = (Button) findViewById(R.id.text);
+        createChannel();
         TextView txt = (TextView) findViewById(R.id.title);
 
         NumberPicker np = (NumberPicker) findViewById(R.id.brewTime);
@@ -53,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         NumberPicker np = (NumberPicker) findViewById(R.id.brewTime);
         new postBrew().execute("brew",Integer.toString(np.getValue()));
     }
+
     class onOffTask extends GetApi {
         @Override
         protected void onPostExecute(String result) {
@@ -61,20 +73,44 @@ public class MainActivity extends AppCompatActivity {
             }
             else{
                 if(timer!=null){
-                    timer.cancel();
-                    timer.purge();
-                    timer = null;
+                    clearTimer();
                 }
+                resetPowerControls();
+                Snackbar sb = Snackbar.make(findViewById(R.id.main_layout),
+                        R.string.power_warning, Snackbar.LENGTH_LONG);
+                sb.show();
             }
-            Toast.makeText(ctx,result,Toast.LENGTH_SHORT).show();
+            Toast t = Toast.makeText(ctx,result,Toast.LENGTH_SHORT);
+            t.setGravity(Gravity.TOP|Gravity.RIGHT, 0, 0);
+            t.show();
+            //StyleableToast.makeText(getApplicationContext(), "Hello World!", Toast.LENGTH_LONG, R.style.mytoast).show();
         }
     }
     class getTemp extends GetApi{
         @Override
         protected void onPostExecute(String result) {
+            Log.d("temp","temp is: "+result);
             TextView txt = (TextView) findViewById(R.id.temp);
             txt.setText(result+"\u00B0");
+            int t = Integer.parseInt(result);
+            if(t==TARGET_TEMPERATURE){
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, 0);
 
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), "temp")
+                        .setSmallIcon(R.drawable.smartespresso_logo)
+                        .setContentTitle("My notification")
+                        .setContentText("Hello World!")
+                        .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                        // Set the intent that will fire when the user taps the notification
+                        .setContentIntent(pendingIntent)
+                        .setAutoCancel(true);
+                NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getApplicationContext());
+
+                // notificationId is a unique int for each notification that you must define
+                notificationManager.notify(1, builder.build());
+            }
         }
     }
     class getPower extends GetApi{
@@ -101,18 +137,17 @@ public class MainActivity extends AppCompatActivity {
                 handler.post(new Runnable() {
                     public void run() {
                         try {
-                            Log.d("Internet","getting temp");
-                            // PerformBackgroundTask this class is the class that extends AsynchTask
+                            Log.d("API","getting temp");
                             new getTemp().execute("temp");
                             new getPower().execute("power");
                         } catch (Exception e) {
-                            // TODO Auto-generated catch block
+                            e.printStackTrace();
                         }
                     }
                 });
             }
         };
-        timer.schedule(doAsynchronousTask, 0, 2000);
+        timer.schedule(doAsynchronousTask, 0, 10000);
     }
 
     public void viewRecipies(View view){
@@ -123,7 +158,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.d("activity","returned!");
         if (requestCode == RECIPE_ACTIVITY_REQUEST_CODE) {
             if (resultCode == RESULT_OK) {
                 // Get String data from Intent
@@ -147,6 +181,42 @@ public class MainActivity extends AppCompatActivity {
         yield.setText(recipeArr[2]);
         brewTime.setText(recipeArr[3]);
     }
+    private void clearTimer(){
+        timer.cancel();
+        timer.purge();
+        timer = null;
+    }
+    private void resetPowerControls(){
+        TextView p = (TextView) findViewById(R.id.power);
+        TextView t = (TextView) findViewById(R.id.temp);
+        p.setText(R.string.power_default);
+        t.setText(R.string.temp_default);
+    }
 
-
+    private void createChannel(){
+        CharSequence name = "temp";
+        String description = "temperature information";//getString(R.string.channel_description);
+        int importance = NotificationManager.IMPORTANCE_DEFAULT;
+        NotificationChannel channel = new NotificationChannel(name.toString(), name, importance);
+        channel.setDescription(description);
+        NotificationManager notificationManager = getSystemService(NotificationManager.class);
+        notificationManager.createNotificationChannel(channel);
+    }
+    @Override
+    public void onResume(){
+        super.onResume();
+        if(timer!=null){
+            clearTimer();
+            updateTempAndPower();
+        }
+    }
+    @Override
+    public void onStop(){
+        super.onStop();
+        if(timer!=null){
+            clearTimer();
+            updateTempAndPower();
+        }
+        Log.d("app","on stop triggered");
+    }
 }
