@@ -40,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
     private static final int RECIPE_ACTIVITY_REQUEST_CODE = 0;
     private static final int TARGET_TEMPERATURE = 93;
     RequestQueue queue;
-    private boolean backgroundTaskIsRunning = false;
+    private static boolean backgroundTaskIsRunning = false;
     final Context ctx = this;
     Timer timer;
-    final Handler handler = new Handler();
+    final static Handler handler = new Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            handler.postDelayed(this,15000);
+            handler.postDelayed(this,1500);
         }
     };
     class getPower extends GetApi{
