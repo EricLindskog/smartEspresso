@@ -20,7 +20,7 @@
     <string name="yield_head">Mängd ut</string>
     <string name="brewTime_head">Bryggtid</string>
     <string name="select_head"> </string>
-    <string name="view_recipies">Se recept</string>
+    <string name="view_recipes">Se recept</string>
     <string name="recipe_controls">Receptkontoll</string>
     <string name="power_warning">Kontrollera att maskinen är avstängd</string>
     <string name="power_default">av</string>

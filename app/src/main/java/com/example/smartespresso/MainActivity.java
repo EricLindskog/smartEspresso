@@ -1,5 +1,6 @@
 package com.example.smartespresso;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -12,6 +13,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Layout;
@@ -25,6 +27,7 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.example.smartespresso.api.GetApi;
 import com.example.smartespresso.api.PostApi;
+import com.example.smartespresso.notification.NotificationService;
 import com.example.smartespresso.recipe.RecipeListActivity;
 import com.google.android.material.snackbar.Snackbar;
 import com.muddzdev.styleabletoast.StyleableToast;
@@ -37,16 +40,15 @@ public class MainActivity extends AppCompatActivity {
     private static final int RECIPE_ACTIVITY_REQUEST_CODE = 0;
     private static final int TARGET_TEMPERATURE = 93;
     RequestQueue queue;
+    private boolean backgroundTaskIsRunning = false;
     final Context ctx = this;
     Timer timer;
+    final Handler handler = new Handler();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //Button turnOn = (Button) findViewById(R.id.text);
-        //Button turnOff = (Button) findViewById(R.id.text);
         createChannel();
-        TextView txt = (TextView) findViewById(R.id.title);
 
         NumberPicker np = (NumberPicker) findViewById(R.id.brewTime);
         np.setMaxValue(100);
@@ -59,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onTurnOff(View view){
         new onOffTask().execute("off");
+        handler.removeCallbacksAndMessages(null);
+        backgroundTaskIsRunning = false;
     }
     public void onBrew(View view){
         NumberPicker np = (NumberPicker) findViewById(R.id.brewTime);
@@ -94,25 +98,23 @@ public class MainActivity extends AppCompatActivity {
             txt.setText(result+"\u00B0");
             int t = Integer.parseInt(result);
             if(t==TARGET_TEMPERATURE){
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, 0);
-
-                NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), "temp")
-                        .setSmallIcon(R.drawable.smartespresso_logo)
-                        .setContentTitle("My notification")
-                        .setContentText("Hello World!")
-                        .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                        // Set the intent that will fire when the user taps the notification
-                        .setContentIntent(pendingIntent)
-                        .setAutoCancel(true);
-                NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getApplicationContext());
-
-                // notificationId is a unique int for each notification that you must define
-                notificationManager.notify(1, builder.build());
+                new NotificationService().postNotification(getApplication());
             }
         }
     }
+    private Runnable doUpdate = new Runnable() {
+        @Override
+        public void run() {
+            try {
+                Log.d("API","getting temp");
+                new getTemp().execute("temp");
+                new getPower().execute("power");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            handler.postDelayed(this,15000);
+        }
+    };
     class getPower extends GetApi{
         @Override
         protected void onPostExecute(String result) {
@@ -128,26 +130,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void updateTempAndPower() {
-        if(timer!=null)return;
-        final Handler handler = new Handler();
-        timer = new Timer();
-        TimerTask doAsynchronousTask = new TimerTask() {
-            @Override
-            public void run() {
-                handler.post(new Runnable() {
-                    public void run() {
-                        try {
-                            Log.d("API","getting temp");
-                            new getTemp().execute("temp");
-                            new getPower().execute("power");
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
-            }
-        };
-        timer.schedule(doAsynchronousTask, 0, 10000);
+        backgroundTaskIsRunning=true;
+        handler.post(doUpdate);
     }
 
     public void viewRecipies(View view){
@@ -205,18 +189,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onResume(){
         super.onResume();
-        if(timer!=null){
-            clearTimer();
-            updateTempAndPower();
-        }
+        resetHandler();
+        Log.d("app","on resume triggered, handler was running: "+ backgroundTaskIsRunning);
     }
     @Override
     public void onStop(){
         super.onStop();
-        if(timer!=null){
-            clearTimer();
+        resetHandler();
+
+        Log.d("app","on stop triggered, handler running: "+ backgroundTaskIsRunning);
+    }
+    private void resetHandler(){
+
+        handler.removeCallbacksAndMessages(null);
+        if(backgroundTaskIsRunning) {
             updateTempAndPower();
         }
-        Log.d("app","on stop triggered");
     }
 }
