@@ -18,7 +18,7 @@
             android:background="@drawable/border"
             android:gravity="center"
             android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="@dimen/default_text_size" />
 
         <TextView
             android:id="@+id/dose"
@@ -28,7 +28,7 @@
             android:background="@drawable/border"
             android:gravity="center"
             android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="@dimen/default_text_size" />
 
         <TextView
             android:id="@+id/yield"
@@ -38,10 +38,20 @@
             android:background="@drawable/border"
             android:gravity="center"
             android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="@dimen/default_text_size" />
 
         <TextView
             android:id="@+id/brewTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:id="@+id/grind"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight=".15"
@@ -54,7 +64,7 @@
             android:id="@+id/selectRecipe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight=".1"
+            android:layout_weight=".02"
             android:background="@drawable/border"
             android:paddingLeft="5dp"
             android:paddingTop="5dp"
@@ -62,6 +72,6 @@
             android:paddingBottom="5dp"
             android:text="@string/select_recipe"
             android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

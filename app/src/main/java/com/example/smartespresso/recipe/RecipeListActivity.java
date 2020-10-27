@@ -29,6 +29,7 @@ public class RecipeListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recipe_list);
         SQLiteDatabase db = openOrCreateDatabase("recipes.db", MODE_PRIVATE, null);
         rdb = new RecipeDatabase(db);
+        rdb.addTable();
         fillList();
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -77,15 +78,30 @@ public class RecipeListActivity extends AppCompatActivity {
         });
         alertDialog.show();
     }
+    public void removeRecipe(String key){
+        rdb.removeRecipe(key);
+        refreshList();
+    }
     private void submitRecipe(View v) {
-        EditText enterCoffee = (EditText) v.findViewById(R.id.editCoffee);
-        EditText enterDose = (EditText) v.findViewById(R.id.editDose);
-        EditText enterYield = (EditText) v.findViewById(R.id.editYield);
-        EditText enterBrewTime = (EditText) v.findViewById(R.id.editBrewTime);
+        EditText enterCoffee = v.findViewById(R.id.editCoffee);
+        EditText enterDose = v.findViewById(R.id.editDose);
+        EditText enterYield = v.findViewById(R.id.editYield);
+        EditText enterBrewTime = v.findViewById(R.id.editBrewTime);
+        EditText enterGrind = v.findViewById(R.id.editGrind);
+
+        int dose = 0; int yield = 0; float brewTime = 0f;
+        try{dose = Integer.parseInt(enterDose.getText().toString());}
+            catch (Exception e){Log.d("Add Recipe", "dose is not a number"); }
+        try{yield = Integer.parseInt(enterYield.getText().toString());}
+            catch (Exception e){Log.d("Add Recipe", "yield is not a number"); }
+        try{brewTime = Float.parseFloat(enterBrewTime.getText().toString());}
+            catch (Exception e){Log.d("Add Recipe", "brewtime is not a number"); }
+
         rdb.addRecipe(enterCoffee.getText().toString(),
-                Integer.parseInt(enterDose.getText().toString()),
-                Integer.parseInt(enterYield.getText().toString()),
-                Float.parseFloat(enterBrewTime.getText().toString()));
+                dose,
+                yield,
+                brewTime,
+                enterGrind.getText().toString());
         refreshList();
     }
 }

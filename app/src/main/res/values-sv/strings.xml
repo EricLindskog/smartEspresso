@@ -15,10 +15,13 @@
     <string name="edit_yield">mängd ut i gram</string>
     <string name="enter_brewTime">Bryggtid</string>
     <string name="edit_brewTime">bryggtid i sekunder</string>
+    <string name="enter_grind">Kvarn</string>
+    <string name="edit_grind">Kvarninställning</string>
     <string name="coffee_head">Kaffe</string>
     <string name="dose_head">Dos</string>
     <string name="yield_head">Mängd ut</string>
     <string name="brewTime_head">Bryggtid</string>
+    <string name="grind_head">Kvarn</string>
     <string name="select_head"> </string>
     <string name="view_recipes">Se recept</string>
     <string name="recipe_controls">Receptkontoll</string>
@@ -26,4 +29,9 @@
     <string name="power_default">av</string>
     <string name="temp_default">-</string>
     <string name="add_recipe_button">Lägg till recept</string>
+    <string name="temp_notification_body">Maskinen är uppvärmd</string>
+    <string name="temp_notification_title">Måltemperaturen är uppnåd</string>
+    <string name="recipe_menu_prompt">Ta bort?</string>
+    <string name="recipe_menu_remove">Ja</string>
+    <string name="recipe_menu_cancel">Nej</string>
 </resources>

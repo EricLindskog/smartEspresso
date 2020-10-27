@@ -15,10 +15,13 @@
     <string name="edit_yield">yield in grams</string>
     <string name="enter_brewTime">Brew time</string>
     <string name="edit_brewTime">Brew time in seconds</string>
+    <string name="enter_grind">Grind</string>
+    <string name="edit_grind">Grind setting</string>
     <string name="coffee_head">Coffee</string>
     <string name="dose_head">Dose</string>
     <string name="yield_head">Yield</string>
     <string name="brewTime_head">Brew time</string>
+    <string name="grind_head">Grind</string>
     <string name="select_head"> </string>
     <string name="view_recipes">View recipes</string>
     <string name="recipe_controls">Recipe controls</string>
@@ -28,4 +31,7 @@
     <string name="add_recipe_button">Add recipe</string>
     <string name="temp_notification_body">The machine has heated up</string>
     <string name="temp_notification_title">Temperature reached</string>
+    <string name="recipe_menu_prompt">Remove recipe?</string>
+    <string name="recipe_menu_remove">Yes</string>
+    <string name="recipe_menu_cancel">No</string>
 </resources>

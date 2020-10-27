@@ -44,11 +44,13 @@ public class MainActivity extends AppCompatActivity {
     final Context ctx = this;
     Timer timer;
     final static Handler handler = new Handler();
+    NotificationService ns;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        createChannel();
+        ns = new NotificationService(this);
+        ns.createChannel();
 
         NumberPicker np = (NumberPicker) findViewById(R.id.brewTime);
         np.setMaxValue(100);
@@ -98,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             txt.setText(result+"\u00B0");
             int t = Integer.parseInt(result);
             if(t==TARGET_TEMPERATURE){
-                new NotificationService().postNotification(getApplication());
+                ns.postNotification();
             }
         }
     }
@@ -160,10 +162,12 @@ public class MainActivity extends AppCompatActivity {
         TextView dose = findViewById(R.id.activeDose);
         TextView yield = findViewById(R.id.activeYield);
         TextView brewTime = findViewById(R.id.activeBrewTime);
+        TextView grind = findViewById(R.id.activeGrind);
         coffee.setText(recipeArr[0]);
         dose.setText(recipeArr[1]);
         yield.setText(recipeArr[2]);
         brewTime.setText(recipeArr[3]);
+        grind.setText(recipeArr[4]);
     }
     private void clearTimer(){
         timer.cancel();
@@ -177,15 +181,7 @@ public class MainActivity extends AppCompatActivity {
         t.setText(R.string.temp_default);
     }
 
-    private void createChannel(){
-        CharSequence name = "temp";
-        String description = "temperature information";//getString(R.string.channel_description);
-        int importance = NotificationManager.IMPORTANCE_DEFAULT;
-        NotificationChannel channel = new NotificationChannel(name.toString(), name, importance);
-        channel.setDescription(description);
-        NotificationManager notificationManager = getSystemService(NotificationManager.class);
-        notificationManager.createNotificationChannel(channel);
-    }
+
     @Override
     public void onResume(){
         super.onResume();

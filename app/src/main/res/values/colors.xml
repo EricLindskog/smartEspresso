@@ -13,4 +13,7 @@
     <color name="powerControlBackground">#E48888</color>
     <color name="powerControlStatusBackground">#eb9494</color>
     <color name="brewControlBackground">#A7E8AA</color>
+    <color name="recipeMenuBackground">#879697</color>
+    <color name="recipeMenuConfirm">#00FF04</color>
+    <color name="recipeMenuCancel">#FF0000</color>
 </resources>
